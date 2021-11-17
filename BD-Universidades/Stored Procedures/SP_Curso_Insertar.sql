@@ -5,7 +5,8 @@ CREATE PROCEDURE SP_Curso_Insertar
 	@Precio DECIMAL(18,3),
 	@CreadoPor VARCHAR(50)
 	AS
-	BEGIN
+BEGIN
+
 	INSERT INTO Cursos(CodigoCurso, NombreCurso, Precio, CreadoPor)
 	VALUES (@CodigoCurso, @NombreCurso, @Precio, @CreadoPor)
 END

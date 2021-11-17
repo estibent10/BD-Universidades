@@ -9,7 +9,8 @@ CREATE PROCEDURE SP_Estudiantes_Insertar
 	@Edad INT,
 	@CreadoPor VARCHAR(50)
 	AS
-	BEGIN
+BEGIN
+	
 	INSERT INTO Estudiantes(CedulaEstudiante, Nombre, Apellidos, Telefono, Direccion, CorreoElectronico, Edad, CreadoPor)
 	VALUES (@CedulaEstudiante, @Nombre, @Apellidos, @Telefono, @Direccion, @CorreoElectronico, @Edad, @CreadoPor)
 END

@@ -1,5 +1,6 @@
 ﻿--FUNCION PARA MOSTRAR DE LA TABLA TODOS LOS REGISTROS ACTIVOS
-CREATE FUNCTION[fn_Universidad_SeleccionarTodos]()
+CREATE FUNCTION FN_Universidad_SeleccionarTodos()
 RETURNS TABLE
 AS
-RETURN SELECT * FROM Universidades A WHERE A.Activo = 1
+RETURN 
+	SELECT * FROM Universidades WHERE Activo = 1

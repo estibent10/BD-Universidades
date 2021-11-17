@@ -88,22 +88,22 @@
     <Build Include="Views\vw_Matricula_SeleccionarActivos.sql" />
     <Build Include="Views\vw_Matricula_SeleccionarUnRegistroPorId.sql" />
     <Build Include="Views\vw_Matriculas_SeleccionarTodos.sql" />
-    <Build Include="Functions\fn_Universidad_SeleccionarsPorId.sql" />
-    <Build Include="Functions\fn_Universidad_SeleccionarTodos.sql" />
-    <Build Include="Functions\fn_Sedes_SeleccionarsPorId.sql" />
-    <Build Include="Functions\fn_Sedes_SeleccionarTodos.sql" />
-    <Build Include="Functions\fn_Carreras_SeleccionarsPorId.sql" />
-    <Build Include="Functions\fn_Carreras_SeleccionarTodos.sql" />
-    <Build Include="Functions\fn_Curso_SeleccionarsPorId.sql" />
-    <Build Include="Functions\fn_Cursos_SeleccionarTodos.sql" />
-    <Build Include="Functions\fn_Aula_SeleccionarsPorId.sql" />
-    <Build Include="Functions\fn_Aula_SeleccionarTodos.sql" />
-    <Build Include="Functions\fn_Profesor_SeleccionarsPorId.sql" />
-    <Build Include="Functions\fn_Profesor_SeleccionarTodos.sql" />
-    <Build Include="Functions\fn_Estudiantes_SeleccionarsPorId.sql" />
-    <Build Include="Functions\fn_Estudiantes_SeleccionarsPorId_1.sql" />
-    <Build Include="Functions\fn_Matricula_SeleccionarsPorId.sql" />
-    <Build Include="Functions\fn_Matricula_SeleccionarTodos.sql" />
+    <Build Include="Functions\FN_Universidad_SeleccionarPorId.sql" />
+    <Build Include="Functions\FN_Universidad_SeleccionarTodos.sql" />
+    <Build Include="Functions\FN_Sedes_SeleccionarPorId.sql" />
+    <Build Include="Functions\FN_Sedes_SeleccionarTodos.sql" />
+    <Build Include="Functions\FN_Carreras_SeleccionarPorId.sql" />
+    <Build Include="Functions\FN_Carreras_SeleccionarTodos.sql" />
+    <Build Include="Functions\FN_Curso_SeleccionarsPorId.sql" />
+    <Build Include="Functions\FN_Cursos_SeleccionarTodos.sql" />
+    <Build Include="Functions\FN_Aula_SeleccionarPorId.sql" />
+    <Build Include="Functions\FN_Aula_SeleccionarTodos.sql" />
+    <Build Include="Functions\FN_Profesor_SeleccionarPorId.sql" />
+    <Build Include="Functions\FN_Profesor_SeleccionarTodos.sql" />
+    <Build Include="Functions\FN_Estudiantes_SeleccionarPorId.sql" />
+    <Build Include="Functions\FN_Estudiantes_SeleccionarTodos.sql" />
+    <Build Include="Functions\FN_Matricula_SeleccionarPorId.sql" />
+    <Build Include="Functions\FN_Matricula_SeleccionarTodos.sql" />
     <Build Include="Stored Procedures\SP_Universidades_Insertar.sql" />
     <Build Include="Stored Procedures\SP_Universidades_Actualizar.sql" />
     <Build Include="Stored Procedures\SP_Universidades_Eliminar.sql" />
@@ -130,5 +130,8 @@
     <Build Include="Stored Procedures\SP_Matricula_Eliminar.sql" />
     <Build Include="Stored Procedures\ObtenerDatosMatriculaPorId1.sql" />
     <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BD-Universidades.publish.xml" />
   </ItemGroup>
 </Project>

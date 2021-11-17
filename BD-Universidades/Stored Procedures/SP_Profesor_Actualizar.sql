@@ -10,18 +10,22 @@ CREATE PROCEDURE SP_Profesor_Actualizar
 	@CreadoPor VARCHAR(50),
 	@ModificadoPor VARCHAR(60)
 	AS
-	BEGIN 
-	DECLARE @FechaModificacion DATETIME;
+BEGIN 
+
+	DECLARE @FechaModificacion DATETIME
     SET @FechaModificacion = (SELECT GETDATE())
-	UPDATE Profesor SET
-	NombreProfesor = @NombreProfesor,
-	Apellidos=@Apellidos,
-	Telefono=@Telefono,
-	Profesion=@Profesion,
-	CorreoElectronico=@CorreoElectronico,
-	Edad=@Edad,
-	FechaModificacion = @FechaModificacion,
-	CreadoPor = @CreadoPor, 
-	ModificadoPor = @ModificadoPor
-	WHERE CedulaProfesor = @CedulaProfesor
+
+	UPDATE Profesor 
+	SET
+		NombreProfesor = @NombreProfesor,
+		Apellidos=@Apellidos,
+		Telefono=@Telefono,
+		Profesion=@Profesion,
+		CorreoElectronico=@CorreoElectronico,
+		Edad=@Edad,
+		FechaModificacion = @FechaModificacion,
+		CreadoPor = @CreadoPor, 
+		ModificadoPor = @ModificadoPor
+	WHERE 
+		CedulaProfesor = @CedulaProfesor
 END

@@ -9,7 +9,8 @@ CREATE PROCEDURE SP_Profesor_Insertar
 	@Edad INT,
 	@CreadoPor VARCHAR(50)
 	AS
-	BEGIN
+BEGIN
+
 	INSERT INTO Profesor(CedulaProfesor, NombreProfesor, Apellidos, Telefono, Profesion, CorreoElectronico, Edad, CreadoPor)
 	VALUES (@CedulaProfesor, @NombreProfesor, @Apellidos, @Telefono, @Profesion, @CorreoElectronico, @Edad, @CreadoPor)
 END

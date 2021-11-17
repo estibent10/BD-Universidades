@@ -7,7 +7,8 @@ CREATE PROCEDURE SP_Sedes_Insertar
 	@Direccion VARCHAR(50),
 	@CreadoPor VARCHAR(50)
 	AS
-	BEGIN
+BEGIN
+	
 	INSERT INTO Sedes(CodigoSede, NombreSede, Telefono, CorreoElectronico, Direccion, CreadoPor )
 	VALUES (@CodigoSede, @NombreSede, @Telefono, @CorreoElectronico, @Direccion, @CreadoPor)
 END

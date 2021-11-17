@@ -5,7 +5,8 @@ CREATE PROCEDURE SP_Universidades_Insertar
 	@CedulaJuridica VARCHAR(25),
 	@CreadoPor VARCHAR(60)
 	AS
-	BEGIN
+BEGIN
+
 	INSERT INTO Universidades(CodigoUniversidad, NombreUniversidad, CedulaJuridica,CreadoPor)
 	VALUES(@CodigoUniversidad, @NombreUniversidad, @CedulaJuridica, @CreadoPor)
 END

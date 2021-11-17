@@ -4,7 +4,8 @@ CREATE PROCEDURE SP_Carrera_Insertar
 	@NombreCarrera VARCHAR(100),
 	@CreadoPor VARCHAR(50)
 	AS
-	BEGIN
+BEGIN
+
 	INSERT INTO Carreras(CodigoCarrera, NombreCarrera, CreadoPor)
 	VALUES (@CodigoCarrera, @NombreCarrera, @CreadoPor)
 END

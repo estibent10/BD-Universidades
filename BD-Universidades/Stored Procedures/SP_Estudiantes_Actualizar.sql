@@ -10,18 +10,22 @@ CREATE PROCEDURE SP_Estudiantes_Actualizar
 	@CreadoPor VARCHAR(50),
 	@ModificadoPor VARCHAR(60)
 	AS
-	BEGIN 
-	DECLARE @FechaModificacion DATETIME;
+BEGIN 
+	
+	DECLARE @FechaModificacion DATETIME
     SET @FechaModificacion = (SELECT GETDATE())
-	UPDATE Estudiantes SET
-	Nombre = @Nombre,
-	Apellidos=@Apellidos,
-	Telefono=@Telefono,
-	Direccion=@Direccion,
-	CorreoElectronico=@CorreoElectronico,
-	Edad=@Edad,
-	FechaModificacion = @FechaModificacion,
-	CreadoPor = @CreadoPor,
-	ModificadoPor = @ModificadoPor
-	WHERE CedulaEstudiante = @CedulaEstudiante
+	
+	UPDATE Estudiantes 
+	SET
+		Nombre = @Nombre,
+		Apellidos=@Apellidos,
+		Telefono=@Telefono,
+		Direccion=@Direccion,
+		CorreoElectronico=@CorreoElectronico,
+		Edad=@Edad,
+		FechaModificacion = @FechaModificacion,
+		CreadoPor = @CreadoPor,
+		ModificadoPor = @ModificadoPor
+	WHERE 
+		CedulaEstudiante = @CedulaEstudiante
 END

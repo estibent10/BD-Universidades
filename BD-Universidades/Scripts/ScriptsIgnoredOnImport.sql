@@ -1,5 +1,5 @@
 ﻿
--- CREACIÃ“N DE LA BASE DE DATOS
+-- CREACIÓN DE LA BASE DE DATOS
 CREATE DATABASE Universidad;
 GO
 
@@ -52,13 +52,13 @@ SELECT * FROM vw_Universidad_SeleccionarUnregistroPorId
 GO
 
 --SE BUSCA UNO POR UNO LOS ID
-SELECT * FROM fn_Universidad_SeleccionarsPorId(1)
+SELECT * FROM FN_Universidad_SeleccionarsPorId(1)
 GO
 
-SELECT * FROM fn_Universidad_SeleccionarsPorId(2)
+SELECT * FROM FN_Universidad_SeleccionarsPorId(2)
 GO
 
-SELECT * FROM [fn_Universidad_SeleccionarTodos]();
+SELECT * FROM [FN_Universidad_SeleccionarTodos]();
 GO
 
 EXEC SP_Sedes_Insertar
@@ -104,10 +104,10 @@ GO
 SELECT * FROM vw_Sedes_SeleccionarUnregistroPorId
 GO
 
-SELECT * FROM fn_Sedes_SeleccionarsPorId(27)
+SELECT * FROM FN_Sedes_SeleccionarsPorId(27)
 GO
 
-SELECT * FROM [fn_Sedes_SeleccionarTodos]();
+SELECT * FROM [FN_Sedes_SeleccionarTodos]();
 GO
 
 EXEC SP_Carrera_Insertar
@@ -126,10 +126,10 @@ GO
 SELECT * FROM vw_Carreras_SeleccionarUnregistroPorId
 GO
 
-SELECT * FROM fn_Carreras_SeleccionarsPorId(255)
+SELECT * FROM FN_Carreras_SeleccionarsPorId(255)
 GO
 
-SELECT * FROM [fn_Carreras_SeleccionarTodos]();
+SELECT * FROM [FN_Carreras_SeleccionarTodos]();
 GO
 
 EXEC SP_Curso_Insertar
@@ -156,10 +156,10 @@ GO
 SELECT * FROM vw_Cursos_SeleccionarUnregistroPorId
 GO
 
-SELECT * FROM fn_Curso_SeleccionarsPorId('B6138')
+SELECT * FROM FN_Curso_SeleccionarsPorId('B6138')
 GO
 
-SELECT * FROM [fn_Cursos_SeleccionarTodos]();
+SELECT * FROM [FN_Cursos_SeleccionarTodos]();
 GO
 
 EXEC SP_Aula_Insertar
@@ -186,10 +186,10 @@ GO
 SELECT * FROM vw_Aula_SeleccionarUnregistroPorId
 GO
 
-SELECT * FROM fn_Aula_SeleccionarsPorId('3_2')
+SELECT * FROM FN_Aula_SeleccionarsPorId('3_2')
 GO
 
-SELECT * FROM [fn_Aula_SeleccionarTodos]();
+SELECT * FROM [FN_Aula_SeleccionarTodos]();
 GO
 
 EXEC SP_Profesor_Insertar
@@ -224,10 +224,10 @@ GO
 SELECT * FROM vw_Profesor_SeleccionarUnregistroPorId
 GO
 
-SELECT * FROM fn_Profesor_SeleccionarsPorId('5-8932-5634')
+SELECT * FROM FN_Profesor_SeleccionarsPorId('5-8932-5634')
 GO
 
-SELECT * FROM [fn_Profesor_SeleccionarTodos]();
+SELECT * FROM [FN_Profesor_SeleccionarTodos]();
 GO
 
 EXEC SP_Estudiantes_Insertar
@@ -251,10 +251,10 @@ GO
 SELECT * FROM vw_Estudiantes_SeleccionarUnregistroPorId
 GO
 
-SELECT * FROM fn_Estudiantes_SeleccionarsPorId('5-09480567')
+SELECT * FROM FN_Estudiantes_SeleccionarsPorId('5-09480567')
 GO
 
-SELECT * FROM [fn_Estudiantes_SeleccionarsPorId]();
+SELECT * FROM [FN_Estudiantes_SeleccionarsPorId]();
 GO
 
 EXEC SP_Matricula_Insertar
@@ -291,10 +291,10 @@ GO
 SELECT * FROM vw_Estudiantes_SeleccionarUnregistroPorId
 GO
 
-SELECT * FROM fn_Matricula_SeleccionarsPorId(2)
+SELECT * FROM FN_Matricula_SeleccionarsPorId(2)
 GO
 
-SELECT * FROM [fn_Matricula_SeleccionarTodos]();
+SELECT * FROM [FN_Matricula_SeleccionarTodos]();
 GO
 
 --DROP VIEW vw_Matriculas_SeleccionarTodos;
